@@ -1,0 +1,20 @@
+{
+  "short_name": "Newsy",
+  "name": "Newsy",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "A simple readable News app",
+  "icons": [
+    {
+      "src": "/img/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/img/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

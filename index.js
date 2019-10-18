@@ -1,5 +1,10 @@
-const API_KEY = "200d811316a34fe68d038e487bc3db78";
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", async () => {
+    await navigator.serviceWorker.register("/sw.js");
+  });
+}
 
+const API_KEY = "200d811316a34fe68d038e487bc3db78";
 async function getNews() {
   const response = await fetch(
     `https://newsapi.org/v2/everything?q=bitcoin&from=2019-09-17&sortBy=publishedAt&apiKey=${API_KEY}`
